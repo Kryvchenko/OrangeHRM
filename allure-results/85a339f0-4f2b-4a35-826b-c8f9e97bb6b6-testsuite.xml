@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663319498345' stop='1663319513410'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1663319498345' status='broken' stop='1663319513410'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='377481fe-b77a-4f88-a864-fad39609ba5c-attachment.png' type='image/png' size='267161'/>
+            </attachments>
+            <failure>
+                <message>Can't call click on element with selector ".oxd-button oxd-button--medium oxd-button--secondary" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector ".oxd-button oxd-button--medium oxd-button--secondary" because element wasn't found
+                    at async SecurePage.add (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/pageobjects/secure.page.js:17:9)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/specs/example.e2e.js:12:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

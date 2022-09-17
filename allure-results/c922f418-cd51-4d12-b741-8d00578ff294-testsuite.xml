@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663333123039' stop='1663333129853'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1663333123039' status='broken' stop='1663333129852'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='fd9456f0-71ae-420f-a3f7-3cb4459180bd-attachment.png' type='image/png' size='288210'/>
+            </attachments>
+            <failure>
+                <message>clickUserRole is not defined</message>
+                <stack-trace>ReferenceError: clickUserRole is not defined
+                    at SecurePage.add (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/pageobjects/admin.page.js:42:9)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/specs/example.e2e.js:9:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

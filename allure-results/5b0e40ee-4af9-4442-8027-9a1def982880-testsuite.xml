@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663404181591' stop='1663404213742'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1663404181592' status='broken' stop='1663404213741'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='4046485e-7a14-4cfc-99ca-df938631fb4f-attachment.png' type='image/png' size='345011'/>
+            </attachments>
+            <failure>
+                <message>locator is not defined</message>
+                <stack-trace>ReferenceError: locator is not defined
+                    at AdminPage.verify (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/pageobjects/admin.page.js:102:23)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/specs/example.e2e.js:10:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

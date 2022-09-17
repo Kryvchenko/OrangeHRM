@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663320878662' stop='1663320894313'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1663320878662' status='broken' stop='1663320894313'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='1581db67-95d3-40f3-b39b-df829f9741fe-attachment.png' type='image/png' size='282107'/>
+            </attachments>
+            <failure>
+                <message>Can't call click on element with selector ".oxd-topbar-body-nav-tab --parent --visited" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector ".oxd-topbar-body-nav-tab --parent --visited" because element wasn't found
+                    at async SecurePage.add (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/pageobjects/secure.page.js:28:9)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/specs/example.e2e.js:10:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

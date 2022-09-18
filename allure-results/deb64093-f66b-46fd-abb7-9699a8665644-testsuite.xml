@@ -1,0 +1,82 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663498015919' stop='1663498035484'>
+    <name>Login to dashboard and multiple operations with user</name>
+    <title>Login to dashboard and multiple operations with user</title>
+    <test-cases>
+        <test-case start='1663498015919' status='passed' stop='1663498020558'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663498020558' status='passed' stop='1663498030061'>
+            <name>should add user</name>
+            <title>should add user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663498030061' status='broken' stop='1663498035275'>
+            <name>should verify that user added and appear</name>
+            <title>should verify that user added and appear</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='c86a0c25-6049-402f-9aae-c02a29474d82-attachment.png' type='image/png' size='251355'/>
+            </attachments>
+            <failure>
+                <message>The selector "'//div[text()=Abdul]'" used with strategy "css selector" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors</message>
+                <stack-trace>invalid selector: The selector "'//div[text()=Abdul]'" used with strategy "css selector" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Object.executeCommandBe (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/node_modules/expect-webdriverio/lib/utils.js:47:16)
+                    at async /Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/node_modules/expect-webdriverio/lib/matchers/element/toBeExisting.js:10:24
+                    at async AdminPage.verify (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/pageobjects/admin.page.js:84:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1663498035275' status='broken' stop='1663498035484'>
+            <name>should delete user</name>
+            <title>should delete user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='5431fddc-340c-42c7-9ae8-1ab13d9f7eaf-attachment.png' type='image/png' size='251344'/>
+            </attachments>
+            <failure>
+                <message>The selector "'//div[text()="Abdul"]/ancestor::div[@class="oxd-table-card"]//span'" used with strategy "css selector" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors</message>
+                <stack-trace>invalid selector: The selector "'//div[text()="Abdul"]/ancestor::div[@class="oxd-table-card"]//span'" used with strategy "css selector" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async AdminPage.delete (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/pageobjects/admin.page.js:102:6)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/specs/main.e2e.js:20:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

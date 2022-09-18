@@ -1,9 +1,11 @@
 const Page = require('./page');
+const expectChai = require('chai').expect;
+
 
 class AdminPage extends Page {
     
     get myName () {
-        return "AbdulVI";
+        return "Balajqq";
     }
     get selectAdmin () {
         return $('//a[@href="/web/index.php/admin/viewAdminModule"]');
@@ -62,6 +64,10 @@ class AdminPage extends Page {
         await this.repeatPassword.addValue('K$mata12345');
         await browser.pause(2000);
         await this.btnSave.click();
+
+        let elem = await $('#oxd-toaster_1');
+        let isDisplayed = await elem.waitForDisplayed();
+        expectChai(isDisplayed).to.equal(true);
     }
 
     get searchField () {

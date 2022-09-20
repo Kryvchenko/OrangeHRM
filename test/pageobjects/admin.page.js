@@ -4,7 +4,7 @@ const Page = require('./page');
 class AdminPage extends Page {
     
     get myName () {
-        return "Block16";
+        return "Balak";
     }
     get selectAdmin () {
         return $('//a[@href="/web/index.php/admin/viewAdminModule"]');

@@ -2,7 +2,7 @@ const LoginPage = require('../pageobjects/login.page');
 const AdminPage = require('../pageobjects/admin.page');
 
 
-describe('Login to dashboard and multiple operations with user', () => {
+describe('Login to dashboard and multiple operations with user', async () => {
     before( async () => {
         await LoginPage.open();
         await LoginPage.login('Admin', 'admin123');

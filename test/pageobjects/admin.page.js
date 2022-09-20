@@ -4,7 +4,7 @@ const Page = require('./page');
 class AdminPage extends Page {
     
     get myName () {
-        return "Block";
+        return "Block16";
     }
     get selectAdmin () {
         return $('//a[@href="/web/index.php/admin/viewAdminModule"]');
@@ -40,31 +40,6 @@ class AdminPage extends Page {
         return $('//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[3]/button[2]');
     }
 
-
-    async add () {
-        await this.selectAdmin.click();
-        await this.selectUserManagment.click();
-        await this.selectUser.click();
-        await this.btnAdd.click();
-        await this.clickUserRole.click();
-        // await this.clickUserRole.waitForDisplayed({timeout: 2000});
-        await browser.keys(['Down arrow']);
-        await browser.keys(['Down arrow', 'Enter']);
-        await this.clickUserStatus.click();
-        // await this.clickUserStatus.waitForDisplayed({timeout: 2000});
-        await browser.keys(['Down arrow']);
-        await browser.keys(['Down arrow','Enter']);
-        await this.selectEmployee.addValue('Joe');
-        await browser.pause(2000);
-        const textAppear = await $('.oxd-autocomplete-dropdown');
-        await textAppear.click();
-        await this.typeUsername.addValue(`${this.myName}`);
-        await this.addPassword.addValue('K$mata12345');
-        await this.repeatPassword.addValue('K$mata12345');
-        await browser.pause(2000);
-        await this.btnSave.click();
-    }
-
     get searchField () {
         return $('//form/div[1]/div/div[1]/div/div[2]/input');
     } 
@@ -78,12 +53,6 @@ class AdminPage extends Page {
         return $(`//div[text()="${this.myName}"]`);
     }
 
-    async verify () {
-      await this.searchField.addValue(`${this.myName}`);
-      await this.btnSearch.click();
-      await this.btnReset.click();
-    }
-    
     get checkBox () {
         return $(`//div[text()="${this.myName}"]/ancestor::div[@class="oxd-table-card"]//span`);
     }
@@ -94,12 +63,6 @@ class AdminPage extends Page {
         return $('//div[@class="orangehrm-modal-footer"]//button[2]');
     }
 
-    async delete () {
-     await this.checkBox.click();
-     await this.btnDelete.click();
-     await this.btnDeleteConfirm.click();  
-    //  await browser.pause(2000);
-    }
 }
 
 module.exports = new AdminPage();

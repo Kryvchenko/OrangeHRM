@@ -1,0 +1,75 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663662255817' stop='1663662271892'>
+    <name>Login to dashboard and multiple operations with user</name>
+    <title>Login to dashboard and multiple operations with user</title>
+    <test-cases>
+        <test-case start='1663662255817' status='passed' stop='1663662260313'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663662260313' status='broken' stop='1663662267087'>
+            <name>should add user</name>
+            <title>should add user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='3b1ec71f-f23c-41dc-a2e9-72fd01db542b-attachment.png' type='image/png' size='307329'/>
+            </attachments>
+            <failure>
+                <message>chai is not a function</message>
+                <stack-trace>TypeError: chai is not a function
+                    at Context.&lt;anonymous> (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/specs/main.e2e.js:19:15)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1663662267087' status='passed' stop='1663662271772'>
+            <name>should verify that user added and appear</name>
+            <title>should verify that user added and appear</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663662271772' status='passed' stop='1663662271891'>
+            <name>should delete user</name>
+            <title>should delete user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

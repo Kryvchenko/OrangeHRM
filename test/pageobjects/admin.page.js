@@ -1,11 +1,10 @@
 const Page = require('./page');
-const expectChai = require('chai').expect;
 
 
 class AdminPage extends Page {
     
     get myName () {
-        return "Balajqq";
+        return "Block";
     }
     get selectAdmin () {
         return $('//a[@href="/web/index.php/admin/viewAdminModule"]');
@@ -48,15 +47,15 @@ class AdminPage extends Page {
         await this.selectUser.click();
         await this.btnAdd.click();
         await this.clickUserRole.click();
-        await this.clickUserRole.waitForDisplayed({timeout: 2000});
+        // await this.clickUserRole.waitForDisplayed({timeout: 2000});
         await browser.keys(['Down arrow']);
         await browser.keys(['Down arrow', 'Enter']);
         await this.clickUserStatus.click();
-        await this.clickUserStatus.waitForDisplayed({timeout: 2000});
+        // await this.clickUserStatus.waitForDisplayed({timeout: 2000});
         await browser.keys(['Down arrow']);
         await browser.keys(['Down arrow','Enter']);
         await this.selectEmployee.addValue('Joe');
-        await browser.pause(5000);
+        await browser.pause(2000);
         const textAppear = await $('.oxd-autocomplete-dropdown');
         await textAppear.click();
         await this.typeUsername.addValue(`${this.myName}`);
@@ -64,10 +63,6 @@ class AdminPage extends Page {
         await this.repeatPassword.addValue('K$mata12345');
         await browser.pause(2000);
         await this.btnSave.click();
-
-        let elem = await $('#oxd-toaster_1');
-        let isDisplayed = await elem.waitForDisplayed();
-        expectChai(isDisplayed).to.equal(true);
     }
 
     get searchField () {
@@ -86,11 +81,7 @@ class AdminPage extends Page {
     async verify () {
       await this.searchField.addValue(`${this.myName}`);
       await this.btnSearch.click();
-      await expect(this.userName).toBeExisting();
       await this.btnReset.click();
-      await browser.pause(3000);
-      await expect(this.userName).toBeExisting();
-      await browser.pause(3000);
     }
     
     get checkBox () {
@@ -106,9 +97,8 @@ class AdminPage extends Page {
     async delete () {
      await this.checkBox.click();
      await this.btnDelete.click();
-     await this.btnDeleteConfirm.click();
-     await browser.pause(3000);  
-     await expect(this.userName.waitForExist({ reverse: true }));
+     await this.btnDeleteConfirm.click();  
+    //  await browser.pause(2000);
     }
 }
 

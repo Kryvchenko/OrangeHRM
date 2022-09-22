@@ -1,6 +1,6 @@
 const LoginPage = require('../pageobjects/login.page');
 const configData = require('../config');
-const constans = require('../constants/constans');
+const constants = require('../constants/constants');
 const AdminPage = require('../pageobjects/admin.page');
 const UserMngPage = require('../pageobjects/user.mng.page');
 const SearchPage = require('../pageobjects/search.page')
@@ -19,7 +19,7 @@ describe('Login to dashboard and multiple operations with user', () => {
     it('verify page title', async () => {
         const title = await LoginPage.getPageTitle()
         console.log('Page title is', title);
-        assert.equal(constans.LOGIN_PAGE_TITLE, await title, 'title is not found')
+        assert.equal(constants.LOGIN_PAGE_TITLE, await title, 'title is not found')
     });
 
     it('verify forgot password link and login with valid credentials', async () => {
@@ -31,7 +31,7 @@ describe('Login to dashboard and multiple operations with user', () => {
        await AdminPage.navigateToUserSection()
        const sectionBtnTitle = await AdminPage.getSectionButtonText()
        console.log("===========> Section btn title: ", sectionBtnTitle)
-       assert.equal(constans.ADMIN_PAGE_BUTTON_TEXT, await sectionBtnTitle, 'button text is not found')
+       assert.equal(constants.ADMIN_PAGE_BUTTON_TEXT, await sectionBtnTitle, 'button text is not found')
     });
 
     it('should select user role and status', async () => {
@@ -39,11 +39,11 @@ describe('Login to dashboard and multiple operations with user', () => {
         await UserMngPage.selectUser()
         const selectedRole = await UserMngPage.getInputText()
         console.log("===========> Input text: ", selectedRole)
-        assert.equal(constans.USER_ROLE, await selectedRole, 'role is not selected')
+        assert.equal(constants.USER_ROLE, await selectedRole, 'role is not selected')
         await UserMngPage.selectStatus()
         const selectedStatus = await UserMngPage.getStatusText()
         console.log("===========> Status text: ", selectedStatus)
-        assert.equal(constans.USER_STATUS, await selectedStatus, 'status is not selected')
+        assert.equal(constants.USER_STATUS, await selectedStatus, 'status is not selected')
     });
 
     it('should select employee and add user name', async () => {
@@ -57,8 +57,8 @@ describe('Login to dashboard and multiple operations with user', () => {
         await UserMngPage.addUserPassword()
         console.log("===========> Password is: ", await elementUtil.doGetValue(UserMngPage.repeatPassword))
         assert.equal(configData.user_pwd, await elementUtil.doGetValue(UserMngPage.repeatPassword), 'invalid password')
-        assert.equal(await UserMngPage.checkPwd(), constans.NEW_USER_PWD, 'password is week')
-        await UserMngPage.checkPwd () === constans.NEW_USER_PWD ? console.log('============> Pwd is good') : console.log('============> Pwd is week')
+        assert.equal(await UserMngPage.checkPwd(), constants.NEW_USER_PWD, 'password is week')
+        await UserMngPage.checkPwd () === constants.NEW_USER_PWD ? console.log('============> Pwd is good') : console.log('============> Pwd is week')
     });
 
     it('should save and search a new user', async () => {

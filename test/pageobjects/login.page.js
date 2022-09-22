@@ -1,5 +1,5 @@
 const elementUtil = require('../util/elementUtil')
-const constans = require('../constants/constans');
+const constants = require('../constants/constants');
 
 const Page = require('./page');
 
@@ -19,7 +19,7 @@ class LoginPage extends Page {
     }
 
     async getPageTitle() {
-     return elementUtil.doGetPageTitle(constans.LOGIN_PAGE_TITLE)
+     return elementUtil.doGetPageTitle(constants.LOGIN_PAGE_TITLE)
     }
 
     async forgotPasswordExist () {

@@ -1,0 +1,157 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663795292749' stop='1663795308579'>
+    <name>Login to dashboard and multiple operations with user</name>
+    <title>Login to dashboard and multiple operations with user</title>
+    <test-cases>
+        <test-case start='1663795292749' status='passed' stop='1663795294411'>
+            <name>should open login page</name>
+            <title>should open login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663795294411' status='passed' stop='1663795294415'>
+            <name>verify page title</name>
+            <title>verify page title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663795294416' status='passed' stop='1663795295091'>
+            <name>verify forgot password link and login with valid credentials</name>
+            <title>verify forgot password link and login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663795295092' status='passed' stop='1663795298929'>
+            <name>should navigate to user page</name>
+            <title>should navigate to user page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663795298929' status='failed' stop='1663795299639'>
+            <name>should select user role and status</name>
+            <title>should select user role and status</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='5f9cac07-447f-4a63-9dd5-1bf3d76718a3-attachment.png' type='image/png' size='286603'/>
+            </attachments>
+            <failure>
+                <message>status is not selected      
+                      actual expected
+                      
+                      'DisabledInactif'
+                      </message>
+                <stack-trace>AssertionError [ERR_ASSERTION]: status is not selected
+                    at Context.&lt;anonymous> (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/specs/main.e2e.js:45:16)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1663795299639' status='passed' stop='1663795301861'>
+            <name>should select employee and add user name</name>
+            <title>should select employee and add user name</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663795301861' status='passed' stop='1663795301981'>
+            <name>should add and repeat password, save new user</name>
+            <title>should add and repeat password, save new user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663795301981' status='passed' stop='1663795308402'>
+            <name>should save and search a new user</name>
+            <title>should save and search a new user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663795308402' status='failed' stop='1663795308578'>
+            <name>count number of icons</name>
+            <title>count number of icons</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='bf5b3b35-cd63-4947-a961-819467bf0389-attachment.png' type='image/png' size='265603'/>
+            </attachments>
+            <failure>
+                <message>Count is mismath      
+                      actual expected
+                      
+                      02
+                      </message>
+                <stack-trace>AssertionError [ERR_ASSERTION]: Count is mismath
+                    at Context.&lt;anonymous> (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/specs/main.e2e.js:78:16)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

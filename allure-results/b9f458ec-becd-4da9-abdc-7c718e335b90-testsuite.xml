@@ -1,0 +1,145 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663837008276' stop='1663837026443'>
+    <name>Login to dashboard and multiple operations with user</name>
+    <title>Login to dashboard and multiple operations with user</title>
+    <test-cases>
+        <test-case start='1663837008276' status='passed' stop='1663837009897'>
+            <name>should open login page</name>
+            <title>should open login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663837009897' status='passed' stop='1663837009902'>
+            <name>verify page title</name>
+            <title>verify page title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663837009903' status='passed' stop='1663837010591'>
+            <name>verify forgot password link and login with valid credentials</name>
+            <title>verify forgot password link and login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663837010592' status='passed' stop='1663837014774'>
+            <name>should navigate to user page</name>
+            <title>should navigate to user page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663837014774' status='passed' stop='1663837015472'>
+            <name>should select user role and status</name>
+            <title>should select user role and status</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663837015472' status='passed' stop='1663837017699'>
+            <name>should select employee and add user name</name>
+            <title>should select employee and add user name</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663837017699' status='passed' stop='1663837017858'>
+            <name>should add password and save new user</name>
+            <title>should add password and save new user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663837017858' status='passed' stop='1663837025447'>
+            <name>should save and search a new user</name>
+            <title>should save and search a new user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663837025447' status='failed' stop='1663837026443'>
+            <name>should delete user</name>
+            <title>should delete user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='f4316939-cf09-4817-81b6-ef7c38df2a17-attachment.png' type='image/png' size='251308'/>
+            </attachments>
+            <failure>
+                <message>expected Element{ …(199) } to be true      
+                      actual expected
+                      
+                      Element { sessionId: '5c064e341f28698b22317c996527c86f', error: { error: 'no such element', message: 'no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()="Costa13"]"}\n  (Session info: chrome=105.0.5195.125)', stacktrace: '0   chromedriver                        0x0000000100cfda90 chromedriver + 3889808\n1   chromedriver                        0x0000000100c8cb54 chromedriver + 3427156\n2   chromedriver                        0x000000010097e238 chromedriver + 221752\n3   chromedriver                        0x00000001009af4c8 chromedriver + 423112\n4   chromedriver                        0x00000001009d8944 chromedriver + 592196\n5   chromedriver                        0x00000001009a454c chromedriver + 378188\n6   chromedriver                        0x0000000100cd12f8 chromedriver + 3707640\n7   chromedriver                        0x0000000100cd4ea8 chromedriver + 3722920\n8   chromedriver                        0x0000000100cdb3d8 chromedriver + 3748824\n9   chromedriver                        0x0000000100cd59a8 chromedriver + 3725736\n10  chromedriver                        0x0000000100cb0de8 chromedriver + 3575272\n11  chromedriver                        0x0000000100cefd1c chromedriver + 3833116\n12  chromedriver                        0x0000000100cefe84 chromedriver + 3833476\n13  chromedriver                        0x0000000100d04210 chromedriver + 3916304\n14  libsystem_pthread.dylib             0x00000001a86fc26c _pthread_start + 148\n15  libsystem_pthread.dylib             0x00000001a86f708c thread_start + 8\n' }, selector: '//div[text()="Costa13"]', parent: Browser { sessionId: '5c064e341f28698b22317c996527c86f', capabilities: { acceptInsecureCerts: true, browserName: 'chrome', browserVersion: '105.0.5195.125', chrome: { chromedriverVersion: '105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853})', userDataDir: '/var/folders/hx/27jmrjjx0cd_ktpm_gs9rx_w0000gp/T/.com.google.Chrome.Jxk00g' }, 'goog:chromeOptions': { debuggerAddress: 'localhost:49393' }, networkConnectionEnabled: false, pageLoadStrategy: 'normal', platformName: 'mac os x', proxy: {}, setWindowRect: true, strictFileInteractability: false, timeouts: { implicit: 0, pageLoad: 300000, script: 30000 }, unhandledPromptBehavior: 'dismiss and notify', 'webauthn:extension:credBlob': true, 'webauthn:extension:largeBlob': true, 'webauthn:virtualAuthenticators': true }, addCommand: [Function (anonymous)], overwriteCommand: [Function (anonymous)], addLocatorStrategy: [Function (anonymous)], config: { specs: [ './test/specs/**/*.js' ], suites: {}, exclude: [], outputDir: undefined, logLevel: 'info', logLevels: {}, excludeDriverLogs: [], bail: 0, waitforInterval: 500, waitforTimeout: 10000, framework: 'mocha', reporters: [ 'spec', [ 'allure', [Object] ] ], services: [ 'chromedriver' ], maxInstances: 10, maxInstancesPerCapability: 100, filesToWatch: [], connectionRetryTimeout: 120000, connectionRetryCount: 3, execArgv: [], runnerEnv: {}, runner: 'local', specFileRetries: 0, specFileRetriesDelay: 0, specFileRetriesDeferred: false, reporterSyncInterval: 100, reporterSyncTimeout: 5000, cucumberFeaturesWithLineNumbers: [], autoCompileOpts: { autoCompile: true, tsNodeOpts: { transpileOnly: true }, babelOpts: {} }, mochaOpts: { timeout: 60000, ui: 'bdd' }, jasmineOpts: { defaultTimeoutInterval: 10000 }, cucumberOpts: { timeout: 10000 }, onPrepare: [], onWorkerStart: [], onWorkerEnd: [], before: [], beforeSession: [], beforeSuite: [], beforeHook: [], beforeTest: [ [Function: bound beforeTest] ], beforeCommand: [], afterCommand: [], afterTest: [ [Function: bound afterTest] ], afterHook: [], afterSuite: [], afterSession: [], after: [], onComplete: [], onReload: [], beforeFeature: [], beforeScenario: [], beforeStep: [], afterStep: [], afterScenario: [], afterFeature: [], baseUrl: 'https://opensource-demo.orangehrmlive.com/', _: [ 'run' ], $0: '/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/node_modules/.bin/wdio', 'config-path': './wdio.conf.js', ignoredWorkerServices: [] } }, emit: [Function: bound ], isReactElement: false, addCommand: [Function (anonymous)], overwriteCommand: [Function (anonymous)] }
+                      </message>
+                <stack-trace>AssertionError: expected Element{ …(199) } to be true
+                    at Context.&lt;anonymous> (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/specs/main.e2e.js:81:34)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,156 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663851322246' stop='1663851348963'>
+    <name>Login to dashboard and multiple operations with user</name>
+    <title>Login to dashboard and multiple operations with user</title>
+    <test-cases>
+        <test-case start='1663851322246' status='passed' stop='1663851323651'>
+            <name>should open login page</name>
+            <title>should open login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663851323651' status='passed' stop='1663851323656'>
+            <name>verify page title</name>
+            <title>verify page title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663851323656' status='passed' stop='1663851324326'>
+            <name>verify forgot password link and login with valid credentials</name>
+            <title>verify forgot password link and login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663851324326' status='passed' stop='1663851328177'>
+            <name>should navigate to user page</name>
+            <title>should navigate to user page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663851328177' status='passed' stop='1663851328664'>
+            <name>should select user role and status</name>
+            <title>should select user role and status</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663851328664' status='passed' stop='1663851330879'>
+            <name>should select employee and add user name</name>
+            <title>should select employee and add user name</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663851330880' status='passed' stop='1663851331020'>
+            <name>should add password and save new user</name>
+            <title>should add password and save new user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663851331020' status='passed' stop='1663851338555'>
+            <name>should save and search a new user</name>
+            <title>should save and search a new user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663851338555' status='pending' stop='1663851338555'>
+            <name>should delete user</name>
+            <title>should delete user</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1663851338555' status='broken' stop='1663851348963'>
+            <name>count multiple elements</name>
+            <title>count multiple elements</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='f3e3bb40-1d77-45a0-bd29-9e59f650223f-attachment.png' type='image/png' size='285574'/>
+            </attachments>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'length')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'length')
+                    at getSelector (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/node_modules/expect-webdriverio/lib/util/formatMessage.js:12:39)
+                    at getSelectors (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/node_modules/expect-webdriverio/lib/util/formatMessage.js:22:69)
+                    at enhanceError (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/node_modules/expect-webdriverio/lib/util/formatMessage.js:43:80)
+                    at /Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/node_modules/expect-webdriverio/lib/matchers/elements/toBeElementsArrayOfSize.js:29:50
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/specs/main.e2e.js:84:10)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

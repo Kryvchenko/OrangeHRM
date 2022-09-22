@@ -4,8 +4,10 @@ const constans = require('../constants/constans');
 const AdminPage = require('../pageobjects/admin.page');
 const UserMngPage = require('../pageobjects/user.mng.page');
 const SearchPage = require('../pageobjects/search.page')
+const DeletePage = require('../pageobjects/delete.page')
 const elementUtil = require('../util/elementUtil');
-
+const { assert } = require('chai');
+const expect = require('expect').expect
 
 
 describe('Login to dashboard and multiple operations with user', () => {
@@ -51,38 +53,41 @@ describe('Login to dashboard and multiple operations with user', () => {
         assert.equal(configData.newusername, await elementUtil.doGetValue(UserMngPage.typeUsername), 'invalid user name')
     });
 
-    it('should add and repeat password, save new user', async () => {
+    it('should add password and save new user', async () => {
         await UserMngPage.addUserPassword()
         console.log("===========> Password is: ", await elementUtil.doGetValue(UserMngPage.repeatPassword))
         assert.equal(configData.user_pwd, await elementUtil.doGetValue(UserMngPage.repeatPassword), 'invalid password')
+        assert.equal(await UserMngPage.checkPwd(), constans.NEW_USER_PWD, 'password is week')
+        await UserMngPage.checkPwd () === constans.NEW_USER_PWD ? console.log('============> Pwd is good') : console.log('============> Pwd is week')
     });
 
     it('should save and search a new user', async () => {
         await UserMngPage.saveUserbtn()
         await SearchPage.selectSearch()
+        await SearchPage.btnSearch.click()
+        await expect(SearchPage.userName).toBeExisting();
+        await SearchPage.btnReset.click()
+        await expect(SearchPage.userName).toBeExisting();
+        
     });
 
-    // it('should add user', async () => {
-
-    //     await AdminPage.btnSave.click();
-    //     await expect(AdminPage.typeUsername).toHaveValue(`${AdminPage.myName}`);
-    //     await expect(AdminPage.typeUsername).toBeExisting();
-    // }); 
-
-    // it('should verify that user added and appear', async () => {
-    //     await AdminPage.searchField.addValue(`${AdminPage.myName}`);
-    //     await AdminPage.btnSearch.click();
-    //     await AdminPage.btnReset.click();
-    //     await expect(AdminPage.userName).toBeExisting();
-    // }); 
-
-    // it('should delete user', async () => {
-    //     await AdminPage.checkBox.click();
-    //     await AdminPage.btnDelete.click();
-    //     await AdminPage.btnDeleteConfirm.click(); 
-    //     const result = await $(`//div[text()="${AdminPage.myName}"]`);
-    //     await result.waitForDisplayed({ reverse: true });  
-    // });    
+    it('should delete user', async () => {
+         await elementUtil.doClick(DeletePage.checkBox);
+         await elementUtil.doClick(DeletePage.btnDelete);
+         await elementUtil.doClick(DeletePage.btnDeleteConfirm);
+         const result = await $(`//div[text()="${configData.newusername}"]`)
+         await result.waitForDisplayed({ reverse: true });  
+         const allTargetElemets = await DeletePage.usersList
+         for (let i =0; i < allTargetElemets.length; i++) {
+         if (await allTargetElemets[i].getText() === configData.newusername) {
+            console.log("================> " + configData.newusername + " Element wasn't deleted")
+            break
+          } else {
+            console.log("================> " + configData.newusername + " Element was successfully deleted")
+            break
+          }
+        }
+    });  
 });
 
 

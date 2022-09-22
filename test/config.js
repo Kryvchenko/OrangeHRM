@@ -1,6 +1,6 @@
 module.exports  = {
     username: "Admin",
     password: "admin123",
-    newusername: "Artem30",
+    newusername: "Alisa10",
     user_pwd: "K$mata12345"
 }

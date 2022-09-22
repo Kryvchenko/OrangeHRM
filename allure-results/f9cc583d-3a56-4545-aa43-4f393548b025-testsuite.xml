@@ -1,0 +1,149 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663832562201' stop='1663832595910'>
+    <name>Login to dashboard and multiple operations with user</name>
+    <title>Login to dashboard and multiple operations with user</title>
+    <test-cases>
+        <test-case start='1663832562202' status='passed' stop='1663832564701'>
+            <name>should open login page</name>
+            <title>should open login page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663832564701' status='passed' stop='1663832564705'>
+            <name>verify page title</name>
+            <title>verify page title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663832564705' status='passed' stop='1663832565391'>
+            <name>verify forgot password link and login with valid credentials</name>
+            <title>verify forgot password link and login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663832565391' status='passed' stop='1663832569372'>
+            <name>should navigate to user page</name>
+            <title>should navigate to user page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663832569372' status='failed' stop='1663832570104'>
+            <name>should select user role and status</name>
+            <title>should select user role and status</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='16735f7b-f8e8-47ec-8a37-1844c494fa4b-attachment.png' type='image/png' size='308679'/>
+            </attachments>
+            <failure>
+                <message>role is not selected      
+                      actual expected
+                      
+                      'ESSStandard Mitarbeiter'
+                      </message>
+                <stack-trace>AssertionError [ERR_ASSERTION]: role is not selected
+                    at Context.&lt;anonymous> (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/specs/main.e2e.js:41:16)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1663832570104' status='passed' stop='1663832572326'>
+            <name>should select employee and add user name</name>
+            <title>should select employee and add user name</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663832572326' status='broken' stop='1663832583639'>
+            <name>should add and repeat password, save new user</name>
+            <title>should add and repeat password, save new user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='38beaab2-ca44-4d54-b49f-94bcf67bc7ff-attachment.png' type='image/png' size='314269'/>
+            </attachments>
+            <failure>
+                <message>element (".--green") still not displayed after 10000ms</message>
+                <stack-trace>Error: element (".--green") still not displayed after 10000ms
+                    at async ElementUtil.doGetText (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/util/elementUtil.js:14:9)
+                    at async UserMngPage.checkPwd (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/pageobjects/user.mng.page.js:66:17)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/specs/main.e2e.js:61:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1663832583639' status='broken' stop='1663832595910'>
+            <name>should save and search a new user</name>
+            <title>should save and search a new user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='b18f531a-07af-4f79-b151-ce519f61c3e9-attachment.png' type='image/png' size='319586'/>
+            </attachments>
+            <failure>
+                <message>element ("//form/div[1]/div/div[1]/div/div[2]/input") still not displayed after 10000ms</message>
+                <stack-trace>Error: element ("//form/div[1]/div/div[1]/div/div[2]/input") still not displayed after 10000ms
+                    at async ElementUtil.doClick (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/util/elementUtil.js:4:8)
+                    at async SearchPage.selectSearch (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/pageobjects/search.page.js:14:17)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/SFT/module-3/ht/HT_Var1/test/specs/main.e2e.js:66:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

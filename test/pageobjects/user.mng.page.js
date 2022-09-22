@@ -60,7 +60,11 @@ class UserMngPage extends Page {
         await browser.pause(2000)
         return await this.btnSave.click()
     }
-
+    async checkPwd () {
+        const pwdStrenght = await $('.--green')
+        // await browser.pause(1000)
+        return (await elementUtil.doGetText(pwdStrenght))
+    }
     async getInputText() {
         return (await elementUtil.doGetText(this.clickUserRole)) 
      }

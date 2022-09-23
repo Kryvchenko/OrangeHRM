@@ -25,8 +25,8 @@ The main files that you will see across these tests are:
 ## Setup
 
 - clone this repository
-- Install all dependencies for this project with "npm install"
-- Testing environment is set to "qa", to change it navigate to package.json, and add desired enviroment to the test script "test": "ENV=qa|prod|dev npx wdio run ./wdio.conf.js". 
+- Install all dependencies for this project with `npm install`
+- Testing environment is set to "qa", to change it navigate to package.json, and add desired enviroment to the test script "test": `ENV=qa|prod|dev npx wdio run ./wdio.conf.js`. 
 
 ## Running test
 
@@ -34,5 +34,5 @@ Code snippets were implemented to make commands shorter and easier to type. Work
 
 - Open terminal
 - Navigate to the project directory 
-- To run the test type: "npm run test"
-- To run the test, generate and open report type: "npm run test && npm run report" 
+- To run the test type: `npm run test`
+- To run the test, generate and open report type: `npm run test && npm run report` 

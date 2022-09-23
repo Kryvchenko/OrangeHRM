@@ -1,3 +1,11 @@
+const url = require('./urls')
+const ENV = process.env.ENV
+
+if(!ENV || ! ['prod', 'qa', "dev"].includes(ENV)) {
+    console.log('Please pass the correct ENV value: ENV=prod|qa|dev')
+    process.exit()
+}
+
 exports.config = {
     //
     // ====================
@@ -94,7 +102,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://opensource-demo.orangehrmlive.com/',
+    baseUrl: url[process.env.ENV],
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,

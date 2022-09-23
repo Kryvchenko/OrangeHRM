@@ -18,6 +18,7 @@ The main files that you will see across these tests are:
  - elementUtil.js
  - constants.js
  - config.js
+ - urls.js
 
 # Instruction
 
@@ -25,6 +26,8 @@ The main files that you will see across these tests are:
 
 - clone this repository
 - Install all dependencies for this project with "npm install"
+- Testing environment is set to "qa", to change it navigate to package.json, and add desired enviroment to the test script "test": "ENV=qa|prod|dev npx wdio run ./wdio.conf.js". 
+
 ## Running test
 
 Code snippets were implemented to make commands shorter and easier to type. Works in the same way from the IDE and the terminal.

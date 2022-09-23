@@ -1,6 +1,5 @@
 const elementUtil = require('../util/elementUtil')
 const constants = require('../constants/constants');
-
 const Page = require('./page');
 
 class LoginPage extends Page {

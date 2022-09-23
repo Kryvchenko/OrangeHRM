@@ -1,7 +1,4 @@
 const configData = require('../config');
-
-
-
 const Page = require('./page');
 
 class DeletePage extends Page {

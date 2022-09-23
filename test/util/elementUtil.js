@@ -36,7 +36,5 @@ class ElementUtil {
        await browser.keys(['Down arrow'])
        return await browser.keys(['Down arrow','Enter']); 
     }
-   
 }
-
 module.exports = new ElementUtil ();

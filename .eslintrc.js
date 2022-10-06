@@ -18,6 +18,7 @@ module.exports = {
           "browser": true, 
           "it": true,
           "describe": true,
-          "process": true
+          "process": true, 
+          "before":true
         }
 }

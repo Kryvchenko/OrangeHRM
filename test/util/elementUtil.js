@@ -1,6 +1,6 @@
 class ElementUtil {
   
-   async doClick(element) {
+    async doClick(element) {
        await element.waitForDisplayed()
        return element.click()
     }

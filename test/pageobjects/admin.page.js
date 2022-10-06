@@ -14,15 +14,10 @@ class AdminPage extends Page {
     get selectUser () {
         return $('//ul[@class="oxd-dropdown-menu"]//li');
     }
-
     async navigateToUserSection() {
         await elementUtil.doClick(this.selectAdmin)
         await elementUtil.doClick(this.selectUserManagment)
         await elementUtil.doClick(this.selectUser)
-    }
-
-    async getSectionButtonText() {
-       return (await elementUtil.doGetText(this.selectAdmin)) 
     }
 }
 module.exports = new AdminPage();

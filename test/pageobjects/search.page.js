@@ -16,7 +16,6 @@ class SearchPage extends Page {
     get userName () {
         return $(`//div[text()="${configData.newusername}"]`);
     }
-
     async selectSearch () {
         await elementUtil.doClick(this.searchField)
         return (await elementUtil.doSetValue(this.searchField, configData.newusername))

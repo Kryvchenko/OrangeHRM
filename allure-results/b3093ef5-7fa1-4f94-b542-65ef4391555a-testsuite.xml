@@ -1,0 +1,148 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1665042300301' stop='1665042363554'>
+    <name>User Management page</name>
+    <title>User Management page</title>
+    <test-cases>
+        <test-case start='1665042300302' status='passed' stop='1665042301426'>
+            <name>should verify login page title</name>
+            <title>should verify login page title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1665042301427' status='broken' stop='1665042311442'>
+            <name>should allow navigate to user page</name>
+            <title>should allow navigate to user page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element ("//a[@href="/web/index.php/admin/viewAdminModule"]") still not displayed after 10000ms</message>
+                <stack-trace>Error: element ("//a[@href="/web/index.php/admin/viewAdminModule"]") still not displayed after 10000ms
+                    at async ElementUtil.doClick (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/util/elementUtil.js:4:8)
+                    at async AdminPage.navigateToUserSection (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/pageobjects/admin.page.js:19:9)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/specs/main.e2e.js:26:8)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1665042311443' status='broken' stop='1665042321463'>
+            <name>should allow to select user role</name>
+            <title>should allow to select user role</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element ("div.orangehrm-header-container > button") still not displayed after 10000ms</message>
+                <stack-trace>Error: element ("div.orangehrm-header-container > button") still not displayed after 10000ms
+                    at async ElementUtil.doClick (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/util/elementUtil.js:4:8)
+                    at async UserMngPage.addNewUser (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/pageobjects/user.mng.page.js:33:9)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/specs/main.e2e.js:32:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1665042321464' status='broken' stop='1665042331486'>
+            <name>should select employee and add user name</name>
+            <title>should select employee and add user name</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call click on element with selector "//input[@placeholder="Type for hints..."]" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "//input[@placeholder="Type for hints..."]" because element wasn't found
+                    at async UserMngPage.selectEmployee (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/pageobjects/user.mng.page.js:44:9)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/specs/main.e2e.js:52:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1665042331487' status='broken' stop='1665042341508'>
+            <name>should add password and save new user</name>
+            <title>should add password and save new user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element ("div.user-password-cell > div > div:nth-child(2) > input") still not displayed after 10000ms</message>
+                <stack-trace>Error: element ("div.user-password-cell > div > div:nth-child(2) > input") still not displayed after 10000ms
+                    at async ElementUtil.doSetValue (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/util/elementUtil.js:9:8)
+                    at async UserMngPage.addUserPassword (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/pageobjects/user.mng.page.js:54:8)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/specs/main.e2e.js:59:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1665042341508' status='broken' stop='1665042353531'>
+            <name>should save and search a new user</name>
+            <title>should save and search a new user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call click on element with selector "//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[3]/button[2]" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[3]/button[2]" because element wasn't found
+                    at async UserMngPage.saveUserbtn (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/pageobjects/user.mng.page.js:59:16)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/specs/main.e2e.js:67:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1665042353532' status='broken' stop='1665042363553'>
+            <name>should delete user</name>
+            <title>should delete user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element ("//div[text()="Oleksandr.Kryvchenko44"]/ancestor::div[@class="oxd-table-card"]//span") still not displayed after 10000ms</message>
+                <stack-trace>Error: element ("//div[text()="Oleksandr.Kryvchenko44"]/ancestor::div[@class="oxd-table-card"]//span") still not displayed after 10000ms
+                    at async ElementUtil.doClick (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/util/elementUtil.js:4:8)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/specs/main.e2e.js:77:10)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

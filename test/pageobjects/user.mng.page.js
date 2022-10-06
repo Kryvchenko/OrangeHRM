@@ -47,28 +47,19 @@ class UserMngPage extends Page {
         const textAppear = await $('.oxd-autocomplete-dropdown');
         await textAppear.click();
     }
-    async addUserName () {
-       return (await elementUtil.doSetValue(this.typeUsername, configData.newusername))
+    async addUserName (userName) {
+       return (await elementUtil.doSetValue(this.typeUsername, userName))
     }
     async addUserPassword () {
        await elementUtil.doSetValue(this.addPassword, configData.user_pwd)
        return (elementUtil.doSetValue(this.repeatPassword, configData.user_pwd))
     }
-    async saveUserbtn () {
+    async clickOnSaveUserButton () {
         await browser.pause(2000)
         return await this.btnSave.click()
-    }
-    async checkPwd () {
-        const pwdStrenght = await $('.--green')
-        // await browser.pause(1000)
-        return (await elementUtil.doGetText(pwdStrenght))
     }
     async getInputText() {
         return (await elementUtil.doGetText(this.clickUserRole)) 
      }
-    async getStatusText() {
-        return (await elementUtil.doGetText(this.clickUserStatus)) 
-     }
-
 }
 module.exports = new UserMngPage();

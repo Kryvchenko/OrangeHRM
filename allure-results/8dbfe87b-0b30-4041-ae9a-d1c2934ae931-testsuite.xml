@@ -1,0 +1,183 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1665042194245' stop='1665042227550'>
+    <name>User Management page</name>
+    <title>User Management page</title>
+    <test-cases>
+        <test-case start='1665042194245' status='passed' stop='1665042195405'>
+            <name>should verify login page title</name>
+            <title>should verify login page title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1665042195406' status='broken' stop='1665042205423'>
+            <name>should allow navigate to user page</name>
+            <title>should allow navigate to user page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element ("//a[@href="/web/index.php/admin/viewAdminModule"]") still not displayed after 10000ms</message>
+                <stack-trace>Error: element ("//a[@href="/web/index.php/admin/viewAdminModule"]") still not displayed after 10000ms
+                    at async ElementUtil.doClick (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/util/elementUtil.js:4:8)
+                    at async AdminPage.navigateToUserSection (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/pageobjects/admin.page.js:19:9)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/specs/main.e2e.js:26:8)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1665042205424' status='broken' stop='1665042215448'>
+            <name>should allow to select user role</name>
+            <title>should allow to select user role</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element ("div.orangehrm-header-container > button") still not displayed after 10000ms</message>
+                <stack-trace>Error: element ("div.orangehrm-header-container > button") still not displayed after 10000ms
+                    at async ElementUtil.doClick (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/util/elementUtil.js:4:8)
+                    at async UserMngPage.addNewUser (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/pageobjects/user.mng.page.js:33:9)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/specs/main.e2e.js:32:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1665042215449' status='broken' stop='1665042225474'>
+            <name>should allow to select user status</name>
+            <title>should allow to select user status</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>waitUntil condition failed with the following reason: no such window: window was already closed
+                  (Session info: chrome=105.0.5195.125)</message>
+                <stack-trace>Error: waitUntil condition failed with the following reason: no such window: window was already closed
+                  (Session info: chrome=105.0.5195.125)
+                    at async ElementUtil.doClick (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/util/elementUtil.js:4:8)
+                    at async UserMngPage.selectStatus (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/pageobjects/user.mng.page.js:40:9)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/specs/main.e2e.js:46:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1665042225475' status='broken' stop='1665042225496'>
+            <name>should select employee and add user name</name>
+            <title>should select employee and add user name</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>no such window: window was already closed
+                  (Session info: chrome=105.0.5195.125)</message>
+                <stack-trace>no such window: no such window: window was already closed
+                  (Session info: chrome=105.0.5195.125)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async UserMngPage.selectEmployee (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/pageobjects/user.mng.page.js:44:9)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/specs/main.e2e.js:52:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1665042225496' status='broken' stop='1665042225510'>
+            <name>should add password and save new user</name>
+            <title>should add password and save new user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>no such window: window was already closed
+                  (Session info: chrome=105.0.5195.125)</message>
+                <stack-trace>no such window: no such window: window was already closed
+                  (Session info: chrome=105.0.5195.125)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async ElementUtil.doSetValue (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/util/elementUtil.js:9:8)
+                    at async UserMngPage.addUserPassword (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/pageobjects/user.mng.page.js:54:8)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/specs/main.e2e.js:59:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1665042225510' status='broken' stop='1665042227536'>
+            <name>should save and search a new user</name>
+            <title>should save and search a new user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>no such window: window was already closed
+                  (Session info: chrome=105.0.5195.125)</message>
+                <stack-trace>no such window: no such window: window was already closed
+                  (Session info: chrome=105.0.5195.125)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async UserMngPage.saveUserbtn (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/pageobjects/user.mng.page.js:59:16)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/specs/main.e2e.js:67:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1665042227536' status='broken' stop='1665042227550'>
+            <name>should delete user</name>
+            <title>should delete user</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>no such window: window was already closed
+                  (Session info: chrome=105.0.5195.125)</message>
+                <stack-trace>no such window: no such window: window was already closed
+                  (Session info: chrome=105.0.5195.125)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async ElementUtil.doClick (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/util/elementUtil.js:4:8)
+                    at async Context.&lt;anonymous> (/Users/Tiger/Desktop/sft/module-3/ht/HT_Var1/test/specs/main.e2e.js:77:10)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

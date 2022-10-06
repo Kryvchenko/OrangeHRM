@@ -15,6 +15,8 @@ class DeletePage extends Page {
     get usersList () {
         return $$('.oxd-table div');
     }
- 
+    get deleteResult () {
+        return $(`//div[text()="${configData.newusername}"]`);
+    }
 }
 module.exports = new DeletePage();

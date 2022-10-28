@@ -1,4 +1,4 @@
-# OrangrHRM 
+# OrangeHRM 
 
 ## Introduction 
 
